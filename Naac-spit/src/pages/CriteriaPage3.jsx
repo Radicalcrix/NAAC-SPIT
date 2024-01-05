@@ -95,7 +95,7 @@ function CriteriaPage3() {
 
   return (
     <>
-      <div className="h-[37rem] w-[55rem] transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 bg-white border border-solid border-red-900 rounded-lg p-3">
+      <div className="h-[37rem] w-[55rem] mt-[3rem] transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 bg-white border border-solid border-red-900 rounded-lg p-3">
         <h1 className="text-[3rem] text-red-600 font-extrabold">CRITERIA 3</h1>
         <div className="w-full h-[2px] bg-gradient-to-l from-white via-gray-500 to-black"></div>
         <div className="m-7">
