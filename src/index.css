@@ -1,0 +1,120 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:10px;
+  padding-left: S10px;
+}
+
+.image {
+  max-width: 100px;
+  margin-right:1000px;
+}
+
+.nav {
+  display: flex;
+  margin-left: 20px;
+} 
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-items {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.menu-items:hover {
+  background-color: #555;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* button css dont touch */
+.aws-btn {
+  --button-default-height: 50px;
+  --button-default-font-size: 30px;
+  --button-default-border-radius: 10px;
+  --button-horizontal-padding: 50px;
+  --button-raise-level: 5px;
+  --button-hover-pressure: 2;
+  --transform-speed: 0.15s;
+  --button-danger-color: #c42e2e;
+  --button-danger-color-dark: #861f1f;
+  --button-danger-color-light: #ffffff;
+  --button-danger-color-hover: #bc2c2c;
+  --button-danger-color-active: #af2929;
+  --button-danger-border: none;
+}
+
+.aws-btn + .aws-btn {
+  margin-left: var(--button-horizontal-padding);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+/* footer section */
+footer {
+  background-color: #333;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 32px 80px 16px;
+}
+
+.icons {
+  color: #333;
+  font-size: 2.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-head-socials{
+  background-color: var(--color-white);
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.footer-head-logo{
+  height: 80px;
+}
+
+.footer-head {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
