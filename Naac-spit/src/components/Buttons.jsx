@@ -48,18 +48,45 @@
 
 // export default Buttons
 
+// import React, { useState } from 'react';
+// function Buttons({ Btn, component }) {
+//   const [showComponent, setShowComponent] = useState(false);
+
+//   const handleButtonClick = () => {
+//     setShowComponent(true);
+//   };
+
+//   return (
+//     <div className="">
+//       <button
+//         className="bg-white text-red-500 hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-black focus:border-red-300 font-bold py-2 px-4 rounded shadow-md transition-all duration-300"
+//         onClick={handleButtonClick}
+//       >
+//         {Btn}
+//       </button>
+
+//       {showComponent && <div>{component}</div>}
+//     </div>
+//   );
+// }
+
+// export default Buttons;
+
 import React, { useState } from 'react';
-function Buttons({ Btn, component }) {
+
+function Buttons({ Btn, component, renderComponent }) {
   const [showComponent, setShowComponent] = useState(false);
 
   const handleButtonClick = () => {
     setShowComponent(true);
+    // Call the renderComponent function to update the selectedComponent
+    renderComponent(component);
   };
 
   return (
-    <div className="">
+    <div className="mt-4">
       <button
-        className="bg-white text-red-500 hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-black focus:border-red-300 font-bold py-2 px-4 rounded shadow-md transition-all duration-300"
+        className="bg-white text-red-500 hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-black focus:border-red-300 font-bold py-6 px-6 rounded shadow-md transition-all duration-300"
         onClick={handleButtonClick}
       >
         {Btn}

@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:"Gilroy";
+  color: white;
 }
 html,body{
   height: 100%;
@@ -73,7 +75,7 @@ header {
 }
 
 
-/* button css dont touch */
+/* button css dont touch
 .aws-btn {
   --button-default-height: 44px;
   --button-default-font-size: 22px;
@@ -99,5 +101,5 @@ header {
   justify-content: center;
   height: 100vh;
   padding-top: 20px;
-}
+} */
 
