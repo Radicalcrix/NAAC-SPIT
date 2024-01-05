@@ -75,12 +75,12 @@ header {
 
 /* button css dont touch */
 .aws-btn {
-  --button-default-height: 50px;
-  --button-default-font-size: 30px;
-  --button-default-border-radius: 10px;
-  --button-horizontal-padding: 50px;
-  --button-raise-level: 5px;
-  --button-hover-pressure: 2;
+  --button-default-height: 44px;
+  --button-default-font-size: 22px;
+  --button-default-border-radius: 4px;
+  --button-horizontal-padding: 17px;
+  --button-raise-level: 4px;
+  --button-hover-pressure: 1;
   --transform-speed: 0.15s;
   --button-danger-color: #c42e2e;
   --button-danger-color-dark: #861f1f;
