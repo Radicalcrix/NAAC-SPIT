@@ -31,7 +31,8 @@
 }
 
 .icons {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  padding: 10px;
   color: #333;
   background-color: white;
   border-radius: 5px;
