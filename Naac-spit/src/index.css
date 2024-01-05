@@ -101,37 +101,3 @@ header {
   padding-top: 20px;
 }
 
-/* footer section */
-footer {
-  background-color: #333;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 32px 80px 16px;
-}
-
-.icons {
-  color: #333;
-  font-size: 2.4rem;
-  position: relative;
-  cursor: pointer;
-}
-
-.footer-head-socials{
-  background-color: var(--color-white);
-  border-radius: 5px;
-  color: #333;
-  cursor: pointer;
-  font-size: 2rem;
-  margin-left: 1rem;
-  padding: 1rem;
-}
-
-.footer-head-logo{
-  height: 80px;
-}
-
-.footer-head {
-  align-items: center;
-  display: flex;
-  width: 100%;
-}
