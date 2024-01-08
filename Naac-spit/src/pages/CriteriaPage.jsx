@@ -6,7 +6,7 @@ function CriteriaPage() {
     {
       mainContent: "1.1.1",
       linkNames: [
-        { name: "Kasambe BTS army <3", pdf: "http://localhost:5173/Criteria 1/1.1.1.pdf" },
+        { name: "Document 1", pdf: "http://localhost:5173/Criteria 1/1.1.1.pdf" },
         { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
         { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
         { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },

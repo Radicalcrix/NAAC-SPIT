@@ -29,7 +29,7 @@ const ExpandableComponent = ({ mainContent, links, isOpen, openBar }) => {
         animate={controls}
       >
         {isOpen && (
-          <div className=" w-[23rem] bg-blue-900 p-4">
+          <div className=" w-[23rem] bg-sky-700 p-4">
             {links.map(({ name, pdf }, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: index * 0.1 }}>
                 <a className='flex gap-1' href={pdf} target="_blank" rel="noopener noreferrer">
