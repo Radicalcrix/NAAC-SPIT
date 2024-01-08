@@ -1,11 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.anime{
-  background:url("./assets/College.jpg");
+.anime {
+  background: url("./assets/College.jpg");
   background-size: cover;
   background-position: center;
+  height: 45rem; /* Set your desired height */
+  width: 100%; /* Full width */
 }
+.anime1 {
+  background: url("./assets/College.jpg");
+  background-size: cover;
+  background-position: center; /* Set your desired height */
+  width: 100%; /* Full width */
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -80,3 +89,39 @@ header {
 }
 
 
+/* Tablet */
+@media (max-width: 1000px) {
+  .anime {
+    height: 100rem;
+    width: 100%; /* Adjust the height for tablets */
+  }
+  .hello{
+    width: 80%; 
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .anime {
+    height: 100rem;
+    width: 480px; /* Adjust the height for mobile */
+  }
+  .hello{
+    width: 470px; 
+  }
+}
+.bye {
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem; 
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 1.8rem; 
+  }
+}
+.dhayanvad{
+  @media screen and (min-width: 481px) and (max-width: 1000px) {
+   width: 100%;
+  }
+}

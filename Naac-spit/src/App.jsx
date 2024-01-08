@@ -39,20 +39,20 @@ function App() {
 
   return (
     <>
-      <div className='z-10'>
+      <div className='z-10 anime1'>
         <Navbar/>
       </div>
       <div className='w-full anime h-[45rem]'>
         <motion.div className="flex gap-3 justify-center align-center">
           {Btns.map((button, index) => (
-            <div key={index}>
+            <div className='' key={index}>
               <Buttons Btn={button.label} component={button.component} renderComponent={renderComponent} />
             </div>
           ))}
         </motion.div>
         {selectedComponent && <div>{selectedComponent}</div>}
       </div>
-      <div className='anime'>
+      <div className='anime1'>
         <Footer />
       </div>
     </>

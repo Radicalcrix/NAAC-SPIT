@@ -32,7 +32,7 @@ const ExpandableComponent = ({ mainContent, links, isOpen, openBar }) => {
           <div className=" w-[23rem] bg-sky-700 p-4">
             {links.map(({ name, pdf }, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: index * 0.1 }}>
-                <a className='flex gap-1' href={pdf} target="_blank" rel="noopener noreferrer">
+                <a className='flex ml-3 gap-1 transform hover:scale-x-110 transition-transform duration-300 ease-in-out' href={pdf} target="_blank" rel="noopener noreferrer">
                   <FaFileDownload className='mt-1'/>
                   {name}
                 </a>
