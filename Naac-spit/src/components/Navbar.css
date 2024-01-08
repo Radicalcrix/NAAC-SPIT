@@ -4,7 +4,7 @@ nav {
   width: 100%;
   padding: 10px 0px;
   top: 0px;
-  background: #333;
+  background:rgba(2, 29, 79, 0.957);
 }
 nav .wrapper {
   position: relative;
@@ -47,14 +47,14 @@ nav .wrapper {
   transition: all 0.3s ease;
 }
 .nav-links li a:hover {
-  background: #3a3b3c;
+  background: rgba(2, 29, 79, 0.957);
 }
 .nav-links .mobile-item {
   display: none;
 }
 .nav-links .drop-menu {
   position: absolute;
-  background: #242526;
+  background:rgba(2, 29, 79, 0.957);
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -86,7 +86,7 @@ nav .wrapper {
   visibility: hidden;
 }
 .mega-box .content {
-  background: #242526;
+  background:rgba(2, 29, 79, 0.957);
   padding: 25px 20px;
   display: flex;
   width: 100%;
@@ -109,7 +109,7 @@ nav .wrapper {
 }
 .content .row .mega-links {
   margin-left: -40px;
-  border-left: 1px solid rgba(255, 255, 255, 0.09);
+  border-left: 1px solid rgba(2, 29, 79, 0.957);
 }
 .row .mega-links li {
   padding: 0 20px;
@@ -147,7 +147,7 @@ nav .wrapper {
     max-width: 350px;
     top: 0;
     left: -100%;
-    background: #242526;
+    background: rgba(2, 29, 79, 0.957);
     display: block;
     padding: 50px 10px;
     line-height: 50px;
@@ -160,10 +160,10 @@ nav .wrapper {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #242526;
+    background: rgba(2, 29, 79, 0.957);
   }
   ::-webkit-scrollbar-thumb {
-    background: #3a3b3c;
+    background: rgba(2, 29, 79, 0.957);
   }
   #menu-btn:checked ~ .nav-links {
     left: 0%;
@@ -212,7 +212,7 @@ nav .wrapper {
     transition: all 0.3s ease;
   }
   .nav-links .mobile-item:hover {
-    background: #3a3b3c;
+    background: rgba(2, 29, 79, 0.957);
   }
   .drop-menu li {
     margin: 0;
@@ -239,7 +239,7 @@ nav .wrapper {
   .mega-box .content .row {
     width: 100%;
     margin-bottom: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(2, 29, 79, 0.957);
   }
   .mega-box .content .row:nth-child(1),
   .mega-box .content .row:nth-child(2) {
@@ -248,6 +248,7 @@ nav .wrapper {
   .content .row .mega-links {
     border-left: 0px;
     padding-left: 15px;
+    
   }
   .row .mega-links li {
     margin: 0;
@@ -272,4 +273,7 @@ nav input {
 .body-text div {
   font-size: 45px;
   font-weight: 600;
+}
+.abcd{
+  background:rgba(2, 29, 79, 0.957) ;
 }

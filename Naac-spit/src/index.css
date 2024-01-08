@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.anime{
+  background:url("./assets/College.jpg");
+  background-size: cover;
+  background-position: center;
+}
 *{
   margin: 0;
   padding: 0;
@@ -74,32 +79,4 @@ header {
   display: block;
 }
 
-
-/* button css dont touch
-.aws-btn {
-  --button-default-height: 44px;
-  --button-default-font-size: 22px;
-  --button-default-border-radius: 4px;
-  --button-horizontal-padding: 17px;
-  --button-raise-level: 4px;
-  --button-hover-pressure: 1;
-  --transform-speed: 0.15s;
-  --button-danger-color: #c42e2e;
-  --button-danger-color-dark: #861f1f;
-  --button-danger-color-light: #ffffff;
-  --button-danger-color-hover: #bc2c2c;
-  --button-danger-color-active: #af2929;
-  --button-danger-border: none;
-}
-
-.aws-btn + .aws-btn {
-  margin-left: var(--button-horizontal-padding);
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  padding-top: 20px;
-} */
 

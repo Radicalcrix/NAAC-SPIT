@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo2.png";
 import logo2 from "../assets/spit-transparent-bg-logo.png";
-import college from "../assets/College.jpg";
+import college from "../assets/clg bg 2.jpeg";
 import "./Navbar.css";
 
 const undertaking_pdf = "http://localhost:5173/Undertaking.pdf";
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <img src={college} alt="" />
                 </div>
                 <div className="row">
-                  <header>Students</header>
+                  <header className="abcd">Students</header>
                   <ul className="mega-links">
                     <li>
                       <a href="https://www.spit.ac.in/wp-content/uploads/2023/11/Students-Council-2023-24.pdf">
@@ -120,8 +120,8 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="row">
-                  <header>Research and Innovation</header>
+                <div className="row" >
+                  <header className="abcd">Research and Innovation</header>
                   <ul className="mega-links">
                     <li>
                       <a href="https://www.spit.ac.in/idealab/">IdeaLab</a>
@@ -144,21 +144,21 @@ const Navbar = () => {
                   </ul>
                 </div>
                 <div className="row">
-                  <header>Events</header>
+                  <header className="abcd">Events</header>
                   <ul className="mega-links">
                     <li>
-                      <a href="https://oculus.spit.ac.in/#new_tab">Oculus</a>
+                      <a href="https://oculus.spit.ac.in/">Oculus</a>
                     </li>
                     <li>
-                      <a href="https://rotaract.spit.ac.in/#new_tab">
-                        Rotaract Club
+                      <a href="https://ecell.spit.ac.in/">
+                        E-cell
                       </a>
                     </li>
                     <li>
-                      <a href="http://ecell.spit.ac.in/#new_tab">E-Cell</a>
+                      <a href="http://ieee.spit.ac.in/">IEEE</a>
                     </li>
                     <li>
-                      <a href="http://ieee.spit.ac.in/#new_tab">IEEE</a>
+                      <a href="http://alumni.spit.ac.in/">Alumni</a>
                     </li>
                   </ul>
                 </div>
@@ -169,6 +169,9 @@ const Navbar = () => {
             <a className="undertaking" onClick={() => openPDF(undertaking_pdf)}>
               Undertaking
             </a>
+          </li>
+          <li>
+            <a className="row" href="#">Login</a>
           </li>
         </ul>
         <label htmlFor="menu-btn" className="btn menu-btn">

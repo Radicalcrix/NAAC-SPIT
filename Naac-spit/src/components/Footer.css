@@ -1,7 +1,7 @@
 /* Footer Styles */
 #footer {
   padding: 32px 80px 16px;
-  background-color: #333;
+  background-color:rgba(2, 29, 79, 0.957);
   width: 100%;
   display: flex;
   flex-direction: column;
