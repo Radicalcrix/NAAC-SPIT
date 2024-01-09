@@ -36,7 +36,7 @@ const ExpandableComponent = ({ mainContent, links, isOpen, openBar }) => {
                   <FaFileDownload className='mt-1'/>
                   {name}
                 </a>
-              </motion.div>
+              </motion.div> 
             ))}
           </div>
         )}

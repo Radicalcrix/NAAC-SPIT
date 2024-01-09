@@ -93,7 +93,7 @@ header {
 @media (max-width: 1000px) {
   .anime {
     height: 100rem;
-    width: 100%; /* Adjust the height for tablets */
+    width: 100%; 
   }
   .hello{
     width: 80%; 
@@ -104,7 +104,7 @@ header {
 @media (max-width: 480px) {
   .anime {
     height: 100rem;
-    width: 480px; /* Adjust the height for mobile */
+    width: 480px;
   }
   .hello{
     width: 470px; 
