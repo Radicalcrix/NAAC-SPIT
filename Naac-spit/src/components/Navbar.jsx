@@ -184,7 +184,6 @@
 
 // export default Navbar;
 
-
 // Navbar.jsx
 
 import React from "react";
@@ -192,6 +191,7 @@ import logo from "../assets/logo2.png";
 import logo2 from "../assets/spit-transparent-bg-logo.png";
 import college from "../assets/clg bg 2.jpeg";
 import "./Navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const undertaking_pdf = "http://localhost:5173/Undertaking.pdf";
 
@@ -204,16 +204,16 @@ const Navbar = () => {
     <nav>
       <div className="wrapper">
         <div className="logo">
-          <img className="w-[5rem]" src={logo2} alt="logo" />
+          <img className="w-[5rem] spit-logo" src={logo2} alt="logo" />
           <img className="w-[25rem]" src={logo} alt="logo" />
         </div>
         <input type="checkbox" id="menu-btn" />
         <label htmlFor="menu-btn" className="btn menu-btn">
-          <i className="fas fa-bars"></i>
+          <FaBars className="icon" />
         </label>
         <ul className="nav-links">
           <label htmlFor="menu-btn" className="btn close-btn">
-            <i className="fas fa-times"></i>
+            <FaTimes className="icon" />
           </label>
           <li>
             <a href="https://www.spit.ac.in/">Home</a>
@@ -255,7 +255,12 @@ const Navbar = () => {
             </a>
             <input type="checkbox" id="showDropLibrary" />
             <label htmlFor="showDropLibrary" className="mobile-item">
-              Library
+              <a
+                href="https://www.spit.ac.in/central-library/"
+                className="Library-link"
+              >
+                Library
+              </a>
             </label>
             <ul className="drop-menu">
               <li>
@@ -311,7 +316,7 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="row" >
+                <div className="row">
                   <header className="abcd">Research and Innovation</header>
                   <ul className="mega-links">
                     <li>
@@ -341,9 +346,7 @@ const Navbar = () => {
                       <a href="https://oculus.spit.ac.in/">Oculus</a>
                     </li>
                     <li>
-                      <a href="https://ecell.spit.ac.in/">
-                        E-cell
-                      </a>
+                      <a href="https://ecell.spit.ac.in/">E-cell</a>
                     </li>
                     <li>
                       <a href="http://ieee.spit.ac.in/">IEEE</a>
@@ -362,7 +365,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a className="row" href="#">Login</a>
+            <a className="row" href="#">
+              Login
+            </a>
           </li>
         </ul>
       </div>
