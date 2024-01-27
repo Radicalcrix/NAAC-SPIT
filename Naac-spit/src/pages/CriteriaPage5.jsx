@@ -1,125 +1,114 @@
 import React, { useState } from "react";
-import ScrollDown from "../components/ScrollDown";
-const openPDF = (url) => {
-  window.open(url, '_blank');
-};
-function CriteriaPage5() {
-  const customContents = [
-    "5.1.1",
-    "5.1.2",
-    "5.1.3",
-    "5.2.1",
-    "5.2.2",
-    "5.3.1",
-    "5.3.2",
-    "5.3.3",
-    "5.3.4",
-    "5.4.1",
-  ];
+import ExpandableComponent from "../components/ExpandableComponent";
 
-  const contentMap = {
-    "5.1.1": (
-      <>
-        <p>Content for 1.1.1</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.1.2": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.1.3": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.2.1": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.2.2": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.3.1": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.3.2": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.3.3": (
-      <>
-        <p>Content for 1.1.2</p>
-        <p>More content...</p>
-      </>
-    ),
-    "5.3.4": (
-      <>
-        <h1>1.3.4</h1>
-      </>
-    ),
-    "5.4.1": (
-      <>
-        <h1>1.4.1</h1>
-      </>
-    ),
-    "5.4.2": (
-      <>
-        <h1>1.4.2</h1>
-      </>
-    ),
-  
-   
-  };
+function CriteriaPage() {
+  const customContents = [
+    {
+      mainContent: "5.1.1",
+      linkNames: [
+        { name: "Document 1", pdf: "http://localhost:5173/Criteria 1/1.1.1.pdf" },
+        { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
+        { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
+        { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
+        { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
+        { name: "Document 2", pdf: "http://localhost:5173/Criteria 1/1.1.2.pdf" },
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+         { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+    {
+      mainContent: "5.1.2",
+      linkNames: [
+        { name: "Document 3", pdf: "#" },
+        { name: "Document 4", pdf: "#" },
+        { name: "Document 5", pdf: "#" }
+      ]
+    },
+  ];
 
   const [openIndex, setOpenIndex] = useState(null);
 
-  const openScrollDown = (index) => {
+  const openExpandable = (index) => {
     setOpenIndex(index === openIndex ? null : index);
   };
 
   return (
     <>
-      <div className="h-[37rem] w-[55rem]  mt-[3rem] transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 bg-white border border-solid border-red-900 rounded-lg p-3">
-        <h1 className="text-[3rem] text-red-600 font-extrabold">CRITERIA 5</h1>
+      <div className="hello h-[37rem] w-[55rem] mt-[2rem] transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 bg-white border border-solid border-blue-900 rounded-lg p-3 overflow-y-auto">
+        <h1 className="text-[3rem] text-blue-900 font-extrabold">CRITERIA 5</h1>
         <div className="w-full h-[2px] bg-gradient-to-l from-white via-gray-500 to-black"></div>
         <div className="m-7">
           <div className="flex flex-wrap">
-            {customContents.slice(0, 6).map((content, index) => (
+            {customContents.map((content, index) => (
               <div key={index} className="mt-3 mr-3">
-                <ScrollDown
-                  customContent={content}
+                <ExpandableComponent
+                  mainContent={content.mainContent}
+                  links={content.linkNames}
                   isOpen={index === openIndex}
-                  openBar={() => openScrollDown(index)}
-                >
-                  {contentMap[content]}
-                </ScrollDown>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-wrap ">
-            {customContents.slice(7).map((content, index) => (
-              <div key={index} className="mt-3 mr-3">
-                <ScrollDown
-                  customContent={content}
-                  isOpen={index + 7 === openIndex}
-                  openBar={() => openScrollDown(index + 7)}
-                >
-                  {contentMap[content]}
-                </ScrollDown>
+                  openBar={() => openExpandable(index)}
+                />
               </div>
             ))}
           </div>
@@ -129,4 +118,9 @@ function CriteriaPage5() {
   );
 }
 
-export default CriteriaPage5;
+export default CriteriaPage;
+
+
+
+
+

@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.anime {
+  background: url("./assets/College.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45rem; /* Set your desired height */
+  width: 100%; /* Full width */
+}
+.anime1 {
+  background: url("./assets/College.jpg");
+  background-size: cover;
+  background-position: center; /* Set your desired height */
+  width: 100%; /* Full width */
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -75,31 +89,39 @@ header {
 }
 
 
-/* button css dont touch
-.aws-btn {
-  --button-default-height: 44px;
-  --button-default-font-size: 22px;
-  --button-default-border-radius: 4px;
-  --button-horizontal-padding: 17px;
-  --button-raise-level: 4px;
-  --button-hover-pressure: 1;
-  --transform-speed: 0.15s;
-  --button-danger-color: #c42e2e;
-  --button-danger-color-dark: #861f1f;
-  --button-danger-color-light: #ffffff;
-  --button-danger-color-hover: #bc2c2c;
-  --button-danger-color-active: #af2929;
-  --button-danger-border: none;
+/* Tablet */
+@media (max-width: 1000px) {
+  .anime {
+    height: 100rem;
+    width: 100%; 
+  }
+  .hello{
+    width: 80%; 
+  }
 }
 
-.aws-btn + .aws-btn {
-  margin-left: var(--button-horizontal-padding);
+/* Mobile */
+@media (max-width: 480px) {
+  .anime {
+    height: 100rem;
+    width: 480px;
+  }
+  .hello{
+    width: 470px; 
+  }
 }
+.bye {
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  padding-top: 20px;
-} */
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem; 
+  }
 
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 1.8rem; 
+  }
+}
+.dhayanvad{
+  @media screen and (min-width: 481px) and (max-width: 1000px) {
+   width: 100%;
+  }
+}
